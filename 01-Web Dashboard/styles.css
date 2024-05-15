@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Outfit, sans-serif;
+}
+
+/*  
+    #3F8CDA - light blue
+    #184A7C - Dark blue
+    
+    #3EDA87 - Light green
+    #187C5E - Dark green
+
+    #59D191 - little dark green
+    #06AB79 - little more dark green
+
+*/
+
+body {
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+  background-color: #184a7c;
+  align-items: center;
+  padding: 10px;
+}
+
+.menu-icon {
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 24px;
+  color: #3f8cda;
+  cursor: pointer;
+}
+
+.logo-half {
+  color: #3eda87;
+}
+
+.sidebar {
+  color: #928e8e;
+  position: relative;
+  width: 250px;
+  padding: 10px;
+  /* border: 2px solid #000; */
+  min-height: calc(100vh - 50.4px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: #9c9898;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sidebar-link:hover {
+  color: #fff;
+  background-color: #3f8cda;
+  box-shadow: #3f8cda 2px 2px 20px -8px;
+}
+
+.sidebar hr {
+  color: #9c9898;
+  margin: 10px 0;
+}
+
+.testright-logo-container {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+
+.testright-logo {
+  width: 140px;
+  margin: 0 auto;
+}
+
+.test-desc {
+  padding: 10px;
+}
+
+.inner-container {
+  display: flex;
+  gap: 20px;
+}
+
+.dash-container {
+  display: flex;
+  max-width: 1242px;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.dashboard-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  min-width: 223px;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  color: #9c9898;
+}
+
+.dash-device-id {
+  margin-top: 20px;
+}
+
+.dash-sidebar-setting {
+  position: absolute;
+  bottom: 20px;
+  color: rgb(84, 83, 83);
+}
+
+.dash-sidebar-dropdown {
+  display: flex;
+  justify-content: center;
+}
+
+.select-container {
+  padding-left: 20px;
+}
+
+.sample-card-list {
+  display: flex;
+  padding: 10px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.sample-card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 10px;
+
+  min-width: 231.49px;
+  min-height: 130px;
+  text-align: center;
+  border: 1px solid #9b9a9a;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: #184a7c;
+  text-transform: uppercase;
+}
+
+.sample-num {
+  color: #9b9a9a;
+}
+
+.sample-card-buttons,
+.progress {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.completed {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #59d191;
+  font-weight: 500;
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+}
+
+.sample-btn1 {
+  width: 50%;
+  border: 1px solid #184a7c;
+  color: #184a7c;
+  background-color: #fff;
+}
+.sample-btn2 {
+  width: 50%;
+  color: #fff;
+  background-color: #184a7c;
+  padding: 10px;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.setting-icon {
+  font-size: 24px;
+}
+
+.start-icon {
+  font-size: 15px;
+  color: #535252;
+}
+
+.stop-icon {
+  font-size: 15px;
+  color: #535252;
+}
+
+.drop-down-icon {
+  font-size: 15px;
+}
+
+.progress {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  /* top: 28px; */
+  font-size: 32px;
+  font-weight: 500;
+  background-color: #3f8cda;
+}
+
+.progress p {
+  width: 100%;
+  text-align: center;
+}
+
+.progress-fill {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 18px;
+  width: 25%;
+  text-align: center;
+  background-color: gainsboro;
+  opacity: 0.5;
+  height: 100%;
+}
+
+.progress-text {
+  /* position: absolute; */
+
+  width: 100%;
+  text-align: right;
+  padding: 6px 0;
+  font-size: 20px;
+  font-weight: 400;
+  color: #184a7c;
+}
+
+.check-icon-container {
+  position: absolute;
+  height: 100%;
+  background-color: #e4dfdf;
+  opacity: 0.2;
+  width: 100%;
+}
+.check-icon {
+  position: relative;
+  top: 35px;
+  z-index: 10;
+  font-size: 75px;
+  font-weight: 800;
+  color: #184a7c;
+}
+
+.temp-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.temp-deg {
+  color: #184a7c;
+  font-size: 16px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.options > .d-flex p {
+  color: #184a7c;
+  font-weight: 600;
+}
